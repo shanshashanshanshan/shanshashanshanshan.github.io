@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>Hello World</title>
+    <url>/2024/07/09/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>linux常见操作</title>
+    <url>/2024/07/14/linux%E5%B8%B8%E8%A7%81%E6%93%8D%E4%BD%9C/</url>
+    <content><![CDATA[<h2 id="linux目录结构"><a href="#linux目录结构" class="headerlink" title="linux目录结构"></a>linux目录结构</h2><ul>
+<li>linux文件系统没有盘符的概念，就是没有C盘，D盘等等，所有的文件入口是从根目录开始</li>
+<li>系统自带的文件不要删或者修改</li>
+</ul>
+<h2 id="linux命令（重点）"><a href="#linux命令（重点）" class="headerlink" title="linux命令（重点）"></a>linux命令（重点）</h2><h5 id="命令格式：command-option-paramaters"><a href="#命令格式：command-option-paramaters" class="headerlink" title="命令格式：command -option paramaters"></a>命令格式：command -option paramaters</h5><p>绝对路径：从根目录开始</p>
+<p>相对路径：从当前目录开始</p>
+<h3 id="ls：list的缩写"><a href="#ls：list的缩写" class="headerlink" title="ls：list的缩写"></a>ls：list的缩写</h3><ul>
+<li>查看指定目录下的文件和文件夹（内容）</li>
+<li>ls：查看当前目录的内容（文件和文件夹），绝对路径写法</li>
+<li>ls &#x2F;root：查看指定目录&#x2F;root里面的内容，相对路径写法</li>
+<li>ls &#x2F;root&#x2F;home： 同时查看多个目录下的内容<ul>
+<li>-a ：all 所有，隐藏和非隐藏的文件和文件夹<ul>
+<li>ls -a：查看当前目录下的隐藏和非隐藏的文件和文件夹</li>
+<li>ls -a &#x2F;home：查看指定目录下隐藏和非隐藏的文件和文件夹</li>
+</ul>
+</li>
+<li>-l：list简写，列表显示，以列表形式显示指定目录下的文件和文件夹<ul>
+<li>ls -l：以列表形式显示当前目录下的文件和文件夹</li>
+<li>ls -l &#x2F;home：-ls -l &#x2F;home :以列表形式显示指定目录下的内容，绝对路径</li>
+<li>ll ：ls -l简写</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="ps-process-status-进程状态"><a href="#ps-process-status-进程状态" class="headerlink" title="ps: process status,进程状态-"></a>ps: process status,进程状态-</h3><ul>
+<li>ps -ef:查看当前正在运行的进程</li>
+</ul>
+<h3 id="kill：终止"><a href="#kill：终止" class="headerlink" title="kill：终止"></a>kill：终止</h3><ul>
+<li><p>kill 37922 ：终止进程37922，有时候不一定会终止进程</p>
+</li>
+<li><p>kill -9 37949：杀死进程37949，一定会杀死进程</p>
+</li>
+<li><p>kill -l：查看kill命令的所有信号</p>
+</li>
+</ul>
+<h3 id="ifconfig：查看虚拟机的网络配置信息"><a href="#ifconfig：查看虚拟机的网络配置信息" class="headerlink" title="ifconfig：查看虚拟机的网络配置信息"></a>ifconfig：查看虚拟机的网络配置信息</h3><ul>
+<li>windows：ipconfig</li>
+<li>iOS：ifconfig</li>
+</ul>
+<h3 id="clear：清屏命令"><a href="#clear：清屏命令" class="headerlink" title="clear：清屏命令"></a>clear：清屏命令</h3><ul>
+<li>也可以用ctrl + l 来替代，也是清屏</li>
+</ul>
+<h3 id="pwd：显示当前目录的绝对路径"><a href="#pwd：显示当前目录的绝对路径" class="headerlink" title="pwd：显示当前目录的绝对路径"></a>pwd：显示当前目录的绝对路径</h3><h3 id="shutdown：关机"><a href="#shutdown：关机" class="headerlink" title="shutdown：关机"></a>shutdown：关机</h3><ul>
+<li>reboot：重启</li>
+<li>shutdown -h now：立马关机</li>
+<li>halt：不断电关机</li>
+</ul>
+<h3 id="cd：change-directory，切换目录"><a href="#cd：change-directory，切换目录" class="headerlink" title="cd：change directory，切换目录"></a>cd：change directory，切换目录</h3><ul>
+<li>cd:切换到当前登录用户的家目录，如果是itcast用户登录的，就回到&#x2F;home&#x2F;itcast,如果是root用户登录的就回到&#x2F;root</li>
+<li>cd  &#x2F;big59&#x2F;test1: 切换到&#x2F;big59&#x2F;test1目录下</li>
+<li>cd .. :返回上一级目录</li>
+<li>cd -：在最近的两个目录间切换</li>
+<li>cd &#x2F; ：切换到根目录</li>
+</ul>
+<h3 id="hostname：查看当前服务器的主机名称"><a href="#hostname：查看当前服务器的主机名称" class="headerlink" title="hostname：查看当前服务器的主机名称"></a>hostname：查看当前服务器的主机名称</h3><h3 id="mkdir：make-directory，创建文件夹"><a href="#mkdir：make-directory，创建文件夹" class="headerlink" title="mkdir：make directory，创建文件夹"></a>mkdir：make directory，创建文件夹</h3><ul>
+<li>cd &#x2F;bigdata_59:</li>
+<li>cd &#x2F;bigdata_59 :先切换到&#x2F;bigdata_59目录下</li>
+<li>mkdir test3 :在当前目录下创建文件夹test3，相对路径</li>
+<li>mkdir &#x2F;big59&#x2F;test3 :在指定目录下创建文件夹test3，绝对路径</li>
+<li>-p :递归创建有层级的文件夹，先检查，判断之后再创建<ul>
+<li>mkdir -p test1&#x2F;test11&#x2F;test111 :在test1里面检查是否有test11，如果有就不管直接在test11里面创建test111，如果test11不存<br>在，先创建test11，再到test11里面创建test111</li>
+</ul>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>test</title>
+    <url>/2024/07/09/test/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>爬虫</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/2024/07/15/testcode/</url>
+    <content><![CDATA[<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">print</span>(<span class="string">&quot;hello world&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+<p>hhh</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>test1</title>
+    <url>/2024/07/15/test1/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+</search>
