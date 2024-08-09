@@ -261,7 +261,7 @@
   <entry>
     <title>博客搭建相关</title>
     <url>/2024/08/08/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%9B%B8%E5%85%B3/</url>
-    <content><![CDATA[<ul>
+    <content><![CDATA[<h2 id="整体框架"><a href="#整体框架" class="headerlink" title="整体框架"></a>整体框架</h2><ul>
 <li><p><img src="https://api2.mubu.com/v3/document_image/23703324_2dec1344-f2a8-401d-ac04-2df4eb04b0b1.png" alt="img"></p>
 </li>
 <li><p>hexo+github+netlify+cloudflare</p>
@@ -283,6 +283,11 @@
 <li><p>CDN加速服务</p>
 </li>
 </ul>
+<h2 id="遇到的错误"><a href="#遇到的错误" class="headerlink" title="遇到的错误"></a>遇到的错误</h2><h3 id="Error-Spawn-failed"><a href="#Error-Spawn-failed" class="headerlink" title="Error: Spawn failed"></a>Error: Spawn failed</h3><p>FATAL Something’s wrong. Maybe you can find the solution here: <a href="https://hexo.io/docs/troubleshooting.html">https://hexo.io/docs/troubleshooting.html</a></p>
+<p><img src="C:/Users/Lenovo/AppData/Roaming/Typora/typora-user-images/image-20240809212809868.png" alt="image-20240809212809868"></p>
+<p>解决：临时禁用SSL验证(不推荐用于生产环境)：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global http.sslVerify false</span><br></pre></td></tr></table></figure>
+
 ]]></content>
       <categories>
         <category>技术</category>
