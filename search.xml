@@ -105,7 +105,10 @@
   <entry>
     <title>python标注</title>
     <url>/2024/08/03/python%E6%A0%87%E6%B3%A8/</url>
-    <content><![CDATA[<h2 id="常见代码块"><a href="#常见代码块" class="headerlink" title="常见代码块"></a>常见代码块</h2><h3 id="合并数据表"><a href="#合并数据表" class="headerlink" title="合并数据表"></a>合并数据表</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#选取基本信息表和公开课教学表并合并</span></span><br><span class="line">basic_info_df=all_dataframe_dict[<span class="string">&#x27;基本信息&#x27;</span>].copy()</span><br><span class="line">subject_teach_df=all_dataframe_dict[<span class="string">&quot;公开课教学&quot;</span>].copy()</span><br><span class="line">merge_df=pd.merge(basic_info_df,subject_teach_df,on=<span class="string">&#x27;关联主键&#x27;</span>,how=<span class="string">&#x27;left&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">#从all_dataframe_dict中取出基本信息表，本人奖项表</span></span><br><span class="line">basic_info_df=all_dataframe_dict[<span class="string">&quot;基本信息&quot;</span>].copy()</span><br><span class="line">reward_info_df=all_dataframe_dict[<span class="string">&quot;本人奖项&quot;</span>].copy()</span><br><span class="line"><span class="comment">#合并数据表</span></span><br><span class="line">merge_df=pd.merge(basic_info_df,reward_info_df,on=<span class="string">&#x27;关联主键&#x27;</span>,how=<span class="string">&#x27;left&#x27;</span>)</span><br></pre></td></tr></table></figure>
+    <content><![CDATA[<h2 id="常见代码块"><a href="#常见代码块" class="headerlink" title="常见代码块"></a>常见代码块</h2><h3 id="打印dataframe"><a href="#打印dataframe" class="headerlink" title="打印dataframe"></a>打印dataframe</h3><p>.reset_index(drop&#x3D;True)[[“教师姓名”,””,””,””,””,””]]</p>
+<p>以dataframe的形式输出所有高级职称教师发表论文的数量</p>
+<p>以上代码输出的是关联主键和论文数量，我想要最后的dataframe显示教师姓名，职称级别，发表刊物，论文数量，帮我修改代码</p>
+<h3 id="合并数据表"><a href="#合并数据表" class="headerlink" title="合并数据表"></a>合并数据表</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#选取基本信息表和公开课教学表并合并</span></span><br><span class="line">basic_info_df=all_dataframe_dict[<span class="string">&#x27;基本信息&#x27;</span>].copy()</span><br><span class="line">subject_teach_df=all_dataframe_dict[<span class="string">&quot;公开课教学&quot;</span>].copy()</span><br><span class="line">merge_df=pd.merge(basic_info_df,subject_teach_df,on=<span class="string">&#x27;关联主键&#x27;</span>,how=<span class="string">&#x27;left&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">#从all_dataframe_dict中取出基本信息表，本人奖项表</span></span><br><span class="line">basic_info_df=all_dataframe_dict[<span class="string">&quot;基本信息&quot;</span>].copy()</span><br><span class="line">reward_info_df=all_dataframe_dict[<span class="string">&quot;本人奖项&quot;</span>].copy()</span><br><span class="line"><span class="comment">#合并数据表</span></span><br><span class="line">merge_df=pd.merge(basic_info_df,reward_info_df,on=<span class="string">&#x27;关联主键&#x27;</span>,how=<span class="string">&#x27;left&#x27;</span>)</span><br></pre></td></tr></table></figure>
 
 <h3 id="柱状图相关"><a href="#柱状图相关" class="headerlink" title="柱状图相关"></a>柱状图相关</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#基于&quot;基本信息”表的&quot;民族&quot;字段进行统计分析</span></span><br><span class="line">df_basic_info = all_dataframe_dict[<span class="string">&quot;基本信息&quot;</span>].copy()</span><br><span class="line">nation_count = df_basic_info.groupby(<span class="string">&quot;民族&quot;</span>)[<span class="string">&quot;关联主键&quot;</span>].nunique().reset_index()</span><br><span class="line">nation_count.columns = [<span class="string">&quot;民族&quot;</span>,<span class="string">&quot;人数&quot;</span>]</span><br><span class="line"></span><br><span class="line"><span class="comment">#按照人数进行排序</span></span><br><span class="line">nation_count = nation_count.sort_values(<span class="string">&#x27;人数&#x27;</span>,ascending=<span class="literal">False</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">#制作柱状图进行展示</span></span><br><span class="line">plt.figure(figsize=(<span class="number">10</span>,<span class="number">6</span>))</span><br><span class="line">sns.barplot(data=nation_count,x=<span class="string">&quot;民族&quot;</span>,y=<span class="string">&quot;人数&quot;</span>,palette=<span class="string">&quot;viridis&quot;</span>)</span><br><span class="line">plt.title(<span class="string">&#x27;我校各民族教师的人数统计&#x27;</span>)</span><br><span class="line">plt.xticks(rotation=<span class="number">90</span>)</span><br><span class="line">plt.show()</span><br><span class="line"></span><br><span class="line"><span class="comment">#展示统计结果</span></span><br><span class="line">nation_count</span><br></pre></td></tr></table></figure>
 
@@ -123,7 +126,7 @@
 
 <h3 id="修改列名"><a href="#修改列名" class="headerlink" title="修改列名"></a>修改列名</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 重命名列 &#x27;B&#x27; 为 &#x27;New_B&#x27;</span></span><br><span class="line">df = df.rename(columns=&#123;<span class="string">&#x27;B&#x27;</span>: <span class="string">&#x27;New_B&#x27;</span>&#125;)</span><br></pre></td></tr></table></figure>
 
-<h3 id="提取近5年的数据"><a href="#提取近5年的数据" class="headerlink" title="提取近5年的数据"></a>提取近5年的数据</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#将&quot;获奖日期&quot;字段转换为datetime美型，并筛选出近5年的数据</span></span><br><span class="line">df_award[<span class="string">&#x27;获奖日期&#x27;</span>]=pd.to_datetime(df_award[<span class="string">&#x27;获奖日期&#x27;</span>])</span><br><span class="line">start_date = pd.to_datetime(<span class="string">&#x27;today&#x27;</span>).year -<span class="number">4</span></span><br><span class="line">df_award=df_award[df_award[<span class="string">&#x27;获奖日期&#x27;</span>].dt.year&gt;=start_date]</span><br></pre></td></tr></table></figure>
+<h3 id="提取近5年的数据"><a href="#提取近5年的数据" class="headerlink" title="提取近5年的数据"></a>提取近5年的数据</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#将&quot;获奖日期&quot;字段转换为datetime类型，并筛选出近5年的数据</span></span><br><span class="line">df_award[<span class="string">&#x27;获奖日期&#x27;</span>]=pd.to_datetime(df_award[<span class="string">&#x27;获奖日期&#x27;</span>],<span class="built_in">format</span>=<span class="string">&quot;%Y.%m.%d&quot;</span>)</span><br><span class="line">start_date = pd.to_datetime(<span class="string">&#x27;today&#x27;</span>).year -<span class="number">4</span></span><br><span class="line">df_award=df_award[df_award[<span class="string">&#x27;获奖日期&#x27;</span>].dt.year&gt;=start_date]</span><br></pre></td></tr></table></figure>
 
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 提取近5年的数据</span></span><br><span class="line">df_recent_5year = df_exchange[df_exchange[<span class="string">&#x27;年份&#x27;</span>]&gt;=pd.Timestamp.now().year-<span class="number">5</span>]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 构造一个新的数据表，对各年份的交流形式为城市学区交流轮岗的教师数量进行统计</span></span><br><span class="line">df_city_school = df_recent_5year[df_recent_5year[<span class="string">&#x27;交流形式&#x27;</span>]==<span class="string">&#x27;城区学区交流轮岗&#x27;</span>].groupby(<span class="string">&#x27;年份&#x27;</span>).size().reset_index()</span><br><span class="line">df_city_school.columns=[<span class="string">&#x27;年份&#x27;</span>,<span class="string">&#x27;城区学区交流轮岗数量&#x27;</span>]</span><br><span class="line"></span><br><span class="line"><span class="comment">#构造一个新的数据表，对各年份的所有教师交流轮岗数量进行统计</span></span><br><span class="line">df_total=dr_recent_5year.groupby(<span class="string">&#x27;年份&#x27;</span>).size().reset_index()</span><br><span class="line">df_total.columns=[<span class="string">&#x27;年份&#x27;</span>,<span class="string">&#x27;全部数量&#x27;</span></span><br><span class="line"><span class="comment">#按照年份将两个数据表进行合并</span></span><br><span class="line">df_merge=pd.merge (df_city_school,df_total,on=<span class="string">&#x27;年份&#x27;</span>)</span><br></pre></td></tr></table></figure>
 
@@ -288,6 +291,53 @@
 <p>解决：临时禁用SSL验证(不推荐用于生产环境)：</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global http.sslVerify false</span><br></pre></td></tr></table></figure>
 
+<p>运行git config –global http.sslVerify false后再运行hexo d后还是出现相同的报错，如何解决:</p>
+<p>如果禁用 SSL 验证后仍然遇到相同的错误，问题可能更复杂。让我们尝试一些更深入的解决方案：</p>
+<ol>
+<li><p>检查 Git 版本：<br>运行 <code>git --version</code> 确保您使用的是最新版本的 Git。如果不是，请更新 Git。</p>
+</li>
+<li><p>检查远程仓库 URL：<br>运行 <code>git remote -v</code> 检查远程仓库的 URL 是否正确。如果使用 HTTPS，尝试切换到 SSH，反之亦然。</p>
+</li>
+<li><p>清除 Git 凭证：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --system --unset credential.helper</span><br><span class="line">git config --global --unset credential.helper</span><br><span class="line">git config --local --unset credential.helper</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>检查代理设置：<br>如果您使用代理，确保 Git 的代理设置正确：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global --unset http.proxy</span><br><span class="line">git config --global --unset https.proxy</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>增加 Git 操作的超时时间：(<strong>运行后再运行hexo d解决问题</strong>)</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global http.lowSpeedLimit 0</span><br><span class="line">git config --global http.lowSpeedTime 999999</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>尝试使用 GitHub CLI：<br>如果您有 GitHub CLI（gh），可以尝试使用它进行身份验证：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">gh auth login</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>手动推送：<br>尝试手动推送到 GitHub 仓库，看看是否能成功：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cd .deploy_git</span><br><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>检查 Hexo 配置：<br>确保您的 Hexo <code>_config.yml</code> 文件中的部署设置正确：</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">&lt;您的</span> <span class="string">GitHub</span> <span class="string">仓库</span> <span class="string">URL&gt;</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>重新安装 hexo-deployer-git：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm uninstall hexo-deployer-git</span><br><span class="line">npm install hexo-deployer-git</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>使用 verbose 模式运行 Hexo：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo deploy --debug</span><br></pre></td></tr></table></figure>
+<p>这会提供更详细的错误信息，可能有助于诊断问题。</p>
+</li>
+<li><p>检查系统时间：<br>确保您的系统时间是正确的，时间不正确可能导致 SSL 错误。</p>
+</li>
+<li><p>临时禁用防火墙和杀毒软件：<br>有时防火墙或杀毒软件可能会干扰 Git 操作。</p>
+</li>
+</ol>
+<p>如果以上方法都不能解决问题，您可以尝试以下替代方案：</p>
+<ol>
+<li><p>使用其他部署方法：<br>例如，使用 rsync 或 FTP 部署，而不是 Git。</p>
+</li>
+<li><p>手动部署：<br>生成静态文件后，手动将它们上传到您的 GitHub Pages 仓库。</p>
+</li>
+<li><p>使用 GitHub Actions：<br>设置 GitHub Actions 工作流来自动部署您的 Hexo 博客，这样可以绕过本地部署问题。</p>
+</li>
+</ol>
+<p>如果问题仍然存在，建议您在 Hexo 的 GitHub 仓库上开一个 issue，提供详细的错误日志和您的环境信息（操作系统、Node.js 版本、Hexo 版本等），以获得更专业的帮助。</p>
 ]]></content>
       <categories>
         <category>技术</category>
