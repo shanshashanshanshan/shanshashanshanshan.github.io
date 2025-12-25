@@ -28,12 +28,11 @@
 <p><img src="https://shan-log.oss-cn-beijing.aliyuncs.com/img/image-20241009175346723.png" alt="image-20241009175346723"></p>
 <p><img src="https://shan-log.oss-cn-beijing.aliyuncs.com/img/image-20241009175359690.png" alt="image-20241009175359690"></p>
 <p><img src="https://shan-log.oss-cn-beijing.aliyuncs.com/img/image-20241009175433926.png" alt="image-20241009175433926"></p>
-<p>for循环</p>
-<p><img src="https://shan-log.oss-cn-beijing.aliyuncs.com/img/image-20241009185034778.png" alt="image-20241009185034778"></p>
+<h3 id="for循环"><a href="#for循环" class="headerlink" title="for循环"></a>for循环</h3><p><img src="https://shan-log.oss-cn-beijing.aliyuncs.com/img/image-20241009185034778.png" alt="image-20241009185034778"></p>
 <p>逆序的循环：step&#x3D;-1</p>
 <p><img src="https://shan-log.oss-cn-beijing.aliyuncs.com/img/image-20241009185303034.png" alt="image-20241009185303034"></p>
 <p><img src="https://shan-log.oss-cn-beijing.aliyuncs.com/img/image-20241009185422952.png" alt="image-20241009185422952"></p>
-<p><img src="https://shan-log.oss-cn-beijing.aliyuncs.com/img/image-20241009192627168.png" alt="image-20241009192627168"></p>
+<h3 id="if语句"><a href="#if语句" class="headerlink" title="if语句"></a>if语句</h3><p><img src="https://shan-log.oss-cn-beijing.aliyuncs.com/img/image-20241009192627168.png" alt="image-20241009192627168"></p>
 <p><img src="https://shan-log.oss-cn-beijing.aliyuncs.com/img/image-20241009192751056.png" alt="image-20241009192751056"></p>
 <p>尽量还是写在不同行，使结构更清晰</p>
 <p><img src="https://shan-log.oss-cn-beijing.aliyuncs.com/img/image-20241009192913965.png" alt="image-20241009192913965"></p>
@@ -43,89 +42,53 @@
 <p><img src="https://shan-log.oss-cn-beijing.aliyuncs.com/img/image-20241009193408400.png" alt="image-20241009193408400"></p>
 <p><img src="https://shan-log.oss-cn-beijing.aliyuncs.com/img/image-20241009193718070.png" alt="image-20241009193718070"></p>
 <p><img src="https://shan-log.oss-cn-beijing.aliyuncs.com/img/image-20241009193732354.png" alt="image-20241009193732354"></p>
-<p><img src="/.cn//imgs/$%7Bfiilename%7D/image-20241009233202980.png" alt="image-20241009233202980"></p>
-<p>添加监视：调试-&gt;添加监视-&gt;表达式</p>
-<p><img src="/.cn//imgs/$%7Bfiilename%7D/image-20241009233747060.png" alt="image-20241009233747060"></p>
-<p>关于字符串：</p>
-<p>1.两个括号括起来（没有双引号会被认为是变量名）</p>
+<h3 id="如何debug："><a href="#如何debug：" class="headerlink" title="如何debug："></a>如何debug：</h3><p>设置断点：鼠标点击这行代码的左侧，然后这行代码的左侧会出现小圆点，此时点运行程序后，程序运行完这行代码后会停止。<br>单步执行：键盘上的F8键</p>
+<p>添加监视：依次点击：调试-&gt;添加监视-&gt;表达式，然后输入想要监视的变量</p>
+<p><img src="https://shan-log.oss-cn-beijing.aliyuncs.com/img/image-20250530160124376.png" alt="image-20250530160124376"></p>
+<h3 id="关于字符串："><a href="#关于字符串：" class="headerlink" title="关于字符串："></a>关于字符串：</h3><p>1.用双引号括起来（没有双引号会被认为是变量名）</p>
 <p>2.字符串中可以包括各种特殊字符（如空格）</p>
 <p>3.字符串中可以包含多个字符、1个字符、甚至0个字符</p>
-<p><img src="/.cn//imgs/$%7Bfiilename%7D/image-20241009234658567.png" alt="image-20241009234658567"></p>
 <p>4.大写字母和小写字母是不一样的字符</p>
 <p>5.由数字字符构成的字符串并不是数字</p>
-<p><img src="/.cn//imgs/$%7Bfiilename%7D/image-20241009234927337.png" alt="image-20241009234927337"></p>
-<p><img src="/.cn//imgs/$%7Bfiilename%7D/image-20241009234942606.png" alt="image-20241009234942606"></p>
-<p><img src="/.cn//imgs/$%7Bfiilename%7D/image-20241009234956668.png" alt="image-20241009234956668"></p>
-<p>因为在VBA中，变量名加&amp;有特殊含义</p>
-<p><img src="/.cn//imgs/$%7Bfiilename%7D/image-20241009235202343.png" alt="image-20241009235202343"></p>
-<p><img src="/.cn//imgs/$%7Bfiilename%7D/image-20241009235317336.png" alt="image-20241009235317336"></p>
-<p><img src="/.cn//imgs/$%7Bfiilename%7D/image-20241009235359945.png" alt="image-20241009235359945"></p>
-<p><img src="/.cn//imgs/$%7Bfiilename%7D/image-20241009235423961.png" alt="image-20241009235423961"></p>
-<p><img src="/.cn//imgs/$%7Bfiilename%7D/image-20241009235452842.png" alt="image-20241009235452842"></p>
-<p><img src="/.cn//imgs/$%7Bfiilename%7D/image-20241009235509870.png" alt="image-20241009235509870"></p>
-<p><img src="/.cn//imgs/$%7Bfiilename%7D/image-20241010000234359.png" alt="image-20241010000234359"></p>
-<p>当我们想用vba代码自动的操作excel中的某种元素时，比如插入一个饼图，那么我们只需要知道饼图在VBA中是用哪一种变量名代表的，它有哪些属性和方法，然后去调用它就行。</p>
-<p><img src="/.cn//imgs/$%7Bfiilename%7D/image-20241010000527445.png" alt="image-20241010000527445"></p>
+<p><img src="https://shan-log.oss-cn-beijing.aliyuncs.com/img/image-20250530163051819.png" alt="image-20250530163051819"></p>
+<p>​      因为在VBA中，变量名加&amp;有特殊含义</p>
+<h3 id="录制宏"><a href="#录制宏" class="headerlink" title="录制宏"></a>录制宏</h3><p>当我们想用vba代码自动的操作excel中的某种元素时，比如插入一个饼图，那么我们只需要知道饼图在VBA中是用哪一种变量名代表的，它有哪些属性和方法，然后去调用它就行。</p>
+<p><img src="https://shan-log.oss-cn-beijing.aliyuncs.com/img/image-20250602121408278.png" alt="image-20250602121408278"></p>
 <p>当我们希望用VBA代码自动执行一段操作的时候，我们可以先自己手工地执行一遍操作，这时让excel把我们手工的操作记录下来，然后它会把这些动作翻译成VBA代码写在VBE编辑器中</p>
-<p><img src="/.cn//imgs/$%7Bfiilename%7D/image-20241010000940069.png" alt="image-20241010000940069"></p>
-<p><img src="/.cn//imgs/$%7Bfiilename%7D/image-20241010175142653.png" alt="image-20241010175142653"></p>
-<p><img src="/.cn//imgs/$%7Bfiilename%7D/image-20241010182938001.png" alt="image-20241010182938001"></p>
-<p><img src="/.cn//imgs/$%7Bfiilename%7D/image-20241010183020544.png" alt="image-20241010183020544"></p>
-<p><img src="/.cn//imgs/$%7Bfiilename%7D/image-20241010183058291.png" alt="image-20241010183058291"></p>
-<p><img src="/.cn//imgs/$%7Bfiilename%7D/image-20241010183230633.png" alt="image-20241010183230633"></p>
-<p>多重嵌套循环：</p>
-<p><img src="/.cn//imgs/$%7Bfiilename%7D/image-20241010185637341.png" alt="image-20241010185637341"></p>
-<p><img src="/.cn//imgs/$%7Bfiilename%7D/image-20241010185744391.png" alt="image-20241010185744391"></p>
-<p>rem加上空格再加注释语句</p>
-<p><img src="/.cn//imgs/$%7Bfiilename%7D/image-20241010185808254.png" alt="image-20241010185808254"></p>
+<h3 id="while语句"><a href="#while语句" class="headerlink" title="while语句"></a>while语句</h3><p><img src="https://shan-log.oss-cn-beijing.aliyuncs.com/img/image-20250602160837158.png" alt="image-20250602160837158"></p>
+<p><img src="https://shan-log.oss-cn-beijing.aliyuncs.com/img/image-20250602161245464.png" alt="image-20250602161245464"></p>
+<p><img src="https://shan-log.oss-cn-beijing.aliyuncs.com/img/image-20250602161302039.png" alt="image-20250602161302039"></p>
+<p><img src="https://shan-log.oss-cn-beijing.aliyuncs.com/img/image-20250602161439903.png"></p>
+<h3 id="多重嵌套循环："><a href="#多重嵌套循环：" class="headerlink" title="多重嵌套循环："></a>多重嵌套循环：</h3><p><img src="https://shan-log.oss-cn-beijing.aliyuncs.com/img/image-20250602161916701.png" alt="image-20250602161916701"></p>
+<p>如何注释：rem加上空格再加注释语句</p>
+<p><img src="https://shan-log.oss-cn-beijing.aliyuncs.com/img/image-20250602162145531.png" alt="image-20250602162145531"></p>
 <p>为了方便，rem可以用单引号代替</p>
-<p><img src="/.cn//imgs/$%7Bfiilename%7D/image-20241010185842795.png" alt="image-20241010185842795"></p>
-<p><img src="/.cn//imgs/$%7Bfiilename%7D/image-20241010185937003.png" alt="image-20241010185937003"></p>
-<p><img src="/.cn//imgs/$%7Bfiilename%7D/image-20241010211323142.png" alt="image-20241010211323142"></p>
-<p><img src="/.cn//imgs/$%7Bfiilename%7D/image-20241010211408785.png" alt="image-20241010211408785"></p>
-<p>微软已经替我们写好了类、属性、方法</p>
-<p><img src="/.cn//imgs/$%7Bfiilename%7D/image-20241010211601098.png" alt="image-20241010211601098"></p>
-<p>excel中的类很多，记住其中几个主要的类就好了</p>
-<p><img src="/.cn//imgs/$%7Bfiilename%7D/image-20241010211643045.png" alt="image-20241010211643045"></p>
-<p><img src="/.cn//imgs/$%7Bfiilename%7D/image-20241010211952688.png" alt="image-20241010211952688"></p>
-<p><img src="/.cn//imgs/$%7Bfiilename%7D/image-20241010212136593.png" alt="image-20241010212136593"></p>
-<p><img src="/.cn//imgs/$%7Bfiilename%7D/image-20241010212350868.png" alt="image-20241010212350868"></p>
-<p><img src="/.cn//imgs/$%7Bfiilename%7D/image-20241010212510310.png" alt="image-20241010212510310"></p>
-<p><img src="/.cn//imgs/$%7Bfiilename%7D/image-20241010212522680.png" alt="image-20241010212522680"></p>
-<p><img src="/.cn//imgs/$%7Bfiilename%7D/image-20241010212651395.png" alt="image-20241010212651395"></p>
-<p><img src="/.cn//imgs/$%7Bfiilename%7D/image-20241010212853840.png" alt="image-20241010212853840"></p>
-<p><img src="/.cn//imgs/$%7Bfiilename%7D/image-20241010212905814.png" alt="image-20241010212905814"></p>
-<p><img src="/.cn//imgs/$%7Bfiilename%7D/image-20241010213146637.png" alt="image-20241010213146637"></p>
-<p><img src="/.cn//imgs/$%7Bfiilename%7D/image-20241011135122950.png" alt="image-20241011135122950"></p>
-<p><img src="/.cn//imgs/$%7Bfiilename%7D/image-20241011135431553.png" alt="image-20241011135431553"></p>
-<p><img src="/.cn//imgs/$%7Bfiilename%7D/image-20241011135554879.png" alt="image-20241011135554879"></p>
-<p><img src="/.cn//imgs/$%7Bfiilename%7D/image-20241011135955237.png" alt="image-20241011135955237"></p>
-<p><img src="/.cn//imgs/$%7Bfiilename%7D/image-20241011140157977.png" alt="image-20241011140157977"></p>
-<p><img src="/.cn//imgs/$%7Bfiilename%7D/image-20241011140207700.png" alt="image-20241011140207700"></p>
-<p><img src="/.cn//imgs/$%7Bfiilename%7D/image-20241011140325825.png" alt="image-20241011140325825"></p>
-<p><img src="/.cn//imgs/$%7Bfiilename%7D/image-20241011140345649.png" alt="image-20241011140345649"></p>
-<pre><code>Sub allScore()
-    Dim i,k
-    Dim wPerson, wAll As Worksheet
-
-    Set wAll = Worksheets(&quot;总分榜&quot;)
-    k=2
-    
-    For i = 1 To Worksheets.Count
-        Set wPerson = Worksheets(i)
-        if wPerson.names &lt;&gt; &quot;总分榜&quot; Then
-            wAll.Cells(i, 1) = wPerson.Cells(1, 2)    
-            wAll.Cells(i, 2) = wPerson.Cells(2, 3)    
-            
-            k=k+1
-        End If
-        
-    Next i
-
-End Sub
-</code></pre>
+<p><img src="https://shan-log.oss-cn-beijing.aliyuncs.com/img/image-20250602162301513.png" alt="image-20250602162301513"></p>
+<h3 id="类与对象"><a href="#类与对象" class="headerlink" title="类与对象"></a>类与对象</h3><p>对象：系统中每一个具体的事物<br>类：对象的分类，同类对象特征相同<br>属性：是什么样子？<br>方法：能做什么？</p>
+<p><img src="https://shan-log.oss-cn-beijing.aliyuncs.com/img/image-20250602163028285-1748853050703-3.png"></p>
+<p>微软已经替我们写好了类、属性、方法，excel中的类很多，记住其中几个主要的类就好了</p>
+<p><img src="https://shan-log.oss-cn-beijing.aliyuncs.com/img/image-20250602164130279.png" alt="image-20250602164130279"></p>
+<p><img src="https://shan-log.oss-cn-beijing.aliyuncs.com/img/image-20250602164702054.png" alt="image-20250602164702054"></p>
+<p>如何自动添加新的工作表：<br>worksheets的Add方法：在所属工作簿中新建一张工作表</p>
+<p><img src="https://shan-log.oss-cn-beijing.aliyuncs.com/img/image-20250602165343123.png" alt="image-20250602165343123"></p>
+<h3 id="用多重循环解决多表汇总问题："><a href="#用多重循环解决多表汇总问题：" class="headerlink" title="用多重循环解决多表汇总问题："></a>用多重循环解决多表汇总问题：</h3><p><img src="https://shan-log.oss-cn-beijing.aliyuncs.com/img/image-20250602170126418.png" alt="image-20250602170126418"></p>
+<p>用worksheets引用工作表的两种形式：</p>
+<ol>
+<li><p>根据工作表的显示位置：WorkSheets(5)</p>
+</li>
+<li><p>根据工作表的名称：WorkSheets(“赵六”)</p>
+<p> Sub allScore()<br> Dim i,k<br> Dim wPerson, wAll As Worksheet<br><br> Set wAll &#x3D; Worksheets(“总分榜”)<br> k&#x3D;2<br><br> For i &#x3D; 1 To Worksheets.Count<br>     Set wPerson &#x3D; Worksheets(i)<br>     if wPerson.names &lt;&gt; “总分榜” Then<br>         wAll.Cells(i, 1) &#x3D; wPerson.Cells(1, 2)  <br>         wAll.Cells(i, 2) &#x3D; wPerson.Cells(2, 3)    <br><br>         k&#x3D;k+1<br>     End If<br><br> Next i<br> End Sub</p>
+</li>
+</ol>
 <p>这节课讲的将工作表分别汇总，再登记到一张新的工作表里的操作在日常生活中非常常见，因此需要多熟悉，记牢，做到自己能够编写程序。</p>
-<p><img src="/.cn//imgs/$%7Bfiilename%7D/image-20241011140725951.png" alt="image-20241011140725951"></p>
+<h3 id="模块化程序涉及（使用过程"><a href="#模块化程序涉及（使用过程" class="headerlink" title="模块化程序涉及（使用过程)"></a>模块化程序涉及（使用过程)</h3><p>使用过程的优点：</p>
+<ol>
+<li>代码清晰，易于维护</li>
+<li>灵活拓展，轻松修改</li>
+<li>代码重复使用，提高效率</li>
+</ol>
+<p><img src="https://shan-log.oss-cn-beijing.aliyuncs.com/img/image-20250602171236953.png" alt="image-20250602171236953"></p>
+<p>调用过程时，可以省略关键字Call，直接写过程名.</p>
 ]]></content>
       <categories>
         <category>笔记</category>
@@ -2240,12 +2203,35 @@ NameError: name &#39;AdaBoostClassifier&#39; is not defined
 <p>“<em>多年以后，当我再次走进穷鬼乐园，一定会弄懂在我昂</em><br><em>首迎接雪花降临的那个黄昏，是否跟父亲思考过同样一</em><br><em>个问题。</em>“</p>
 <p>(“多年以后，奥雷连诺上校站在行刑队面前，准会想起<br>父亲带他去参观冰块的那个遥远的下午<br>一一马尔克斯《百年孤独》”)</p>
 <hr>
+<p>11.30</p>
+<p>[一席]阮筠庭</p>
+<p>这件事情开始让我去反思，我们所认为的正确是什么呢？</p>
+<p>为什么我们能看见前面是死路一条，那是因为我们走过很多弯路，因为我们曾经犯过错，我们掉进过坑里，所以才知道前方是有坑的，<em>但是成为大人后的我们常常就忘了这一点</em>，有时我们不允许那些年轻人走同样的路，我们不允许有弯路，但也许对一个人来说这就是最近的道路，他必须要经历这样的路，哪怕是你看起来很愚蠢的、很傻的、没有必要的一件事情，<em>这是他必须要经历的，他才能学到那个对于他最重要的东西，所以也许这是最近的路。</em></p>
+<p>我有个很爱我的学生，她跟我说：老师，我以后一定会加倍努力，不辜负你的期望，我跟她说：”我跟你再说一遍,<em>我对你没有期望，只有爱</em>，从今往后的人生，我希望你为你自己而活。“</p>
+<p>所以唯有我们放下别人的目光，放下这些背负的东西，我们才有可能去尝试，才有可能为自己去找到这样的一个位置。</p>
+<p>有一天，当我拉开抽屉，看到我以前好多的奖状和证书，<em>我看到在人的一生中用了多少精力去获得这样的东西，让它堆积起来看起来是一个还不错的人的样子，然而现在我知道人并不是这些东西</em>，如果现在我还可以遇到那位同学，我会跟他说：你不需要成为我这样的人，就成为一个你那样的人吧，我也会做我自己。</p>
+<hr>
 ]]></content>
       <categories>
         <category>生活</category>
       </categories>
       <tags>
         <tag>随机</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>好久不见</title>
+    <url>/2025/12/26/%E5%A5%BD%E4%B9%85%E4%B8%8D%E8%A7%81/</url>
+    <content><![CDATA[<p>​    这两天在看一个博客中的文章，于是才想起来自己去年暑假的时候也搭了自己的网站，今天晚上刚好想起来这一茬，加上自己最近输入的一些信息，莫名有想写点什么的冲动。</p>
+<p>​    于是打开了面前的电脑，打开浏览器后由于太久没登陆过，忘记网站的域名了，只记得有个“shan”，还好输入“shan”后浏览器自动帮我识别出了我登录过的网站，于是找到了域名，打开后才发现上一边日志还停留在24年的11月，我居然一整年都没有更新过了。</p>
+<p>​    回顾这一年，我经历了从大四伊始在考研、公考与就业间挣扎的迷茫，到实习期的闲适，再到站在公考考场上的淡然。在毕业季的狂欢与离愁交织后，我踏入社会这所‘大学，在社会这个大染缸中不断地重塑自己。</p>
+<p>​    像我昨天写下的“我知道我一直是幸运的”，作为职场新人以及行业新人的我来说，刚入职不到一个月，压力在所难免，短短二十多天经历了在地铁上和路上情不自禁掉下眼泪的窘迫时刻，还有被刁难的时刻，但幸运的是我遇到了很好的leader：坤哥，很好的朋友：小娟，还有迪哥、德哥他们，都对我很照顾，也都不吝赐教，还有一些很好的商户，这些都是生命中宝贵的礼物。</p>
+<p>​    我也意识到自己还有很多需要学习和改变的地方，这些都要努力去完成。</p>
+<hr>
+<p>当然，这些天我也听到和看到了一些杂乱的信息，它们有些会让我感到震惊，有的让我感到惊奇，还有些让我对一些过往的想法产生怀疑，或是男女关系、或是人际关系、或是价值观</p>
+]]></content>
+      <tags>
+        <tag>随记</tag>
       </tags>
   </entry>
 </search>
